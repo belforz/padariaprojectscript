@@ -1,0 +1,2 @@
+# padariaprojectscript
+somente script
