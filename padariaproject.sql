@@ -113,6 +113,10 @@ INSERT INTO `produto` (`idProduto`, `Pnome`, `Descricao`, `categoria`, `quantida
 (2, 'Cake', 'Yummy cake', 'Doce', 5, 25.5),
 (3, 'Soda', 'Refreshing soda', 'Bebida', 50, 1.99);
 
+INSERT INTO `produto` (`idProduto`, `Pnome`, `Descricao`, `categoria`, `quantidade`, `valor_inicial`) VALUES
+(4, 'Teste1', 'Delicious pizza', 'Salgado', 15, 12.99),
+(5, 'Teste2', 'Yummy cake', 'Doce', 18, 25.5),
+(6, 'Teste3', 'Refreshing soda', 'Bebida', 20, 1.99);
 -- --------------------------------------------------------
 
 --
@@ -170,3 +174,13 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+ALTER TABLE users add column CEP varchar(100);
+ALTER TABLE users add column Logradouro varchar(100);
+ALTER TABLE users add column Bairro varchar(100);
+ALTER TABLE users add column Cidade varchar(100);
+ALTER TABLE users add column Estado varchar(100);
+
+
+
